@@ -1,0 +1,132 @@
+30/03/2024
+==========================================================================
+3. External CSS
+	- It is apply in the <head> section with the <link> element / tag.
+	- External CSS can apply on multipal html pages.
+	- External css contains a saprate .css extention file.
+	
+eg.:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Demo1.css">
+</head>
+<body>
+    <H1>
+        This is the Heading Section........
+    </H1>
+    <p>
+        This is the Paragraph1...........
+    </p>
+    <p>
+        This is the Paragraph2...........
+    </p>
+    <p>
+        This is the Paragraph3...........
+    </p>
+    <p style="background-color: red;">
+        This is the Paragraph4...........
+    </p>
+    <div>
+        This is the Division1...........
+    </div>
+    <div>
+        This is the Division2...........
+    </div>
+    <div>
+        This is the Division2...........
+    </div>
+</body>
+</html>
+===========================================================================
+Cascading Order:
+	- Cascading contins the apply all types of CSS on HTML page.
+	- Cascading order rule 1 contins the higest priority.
+	1. Inline CSS    ------------------------- High Priority
+	2. Internal CSS and External CSS
+	3. Browser element. ----------------------  Low Priority
+eg.:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h1, p, div{
+            background-color: gray;
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/Demo1.css">
+</head>
+<body>
+    <H1 >
+        This is the Heading Section........
+    </H1>
+    <p style="background-color: red; color: white;">
+        This is the Paragraph4...........
+    </p>
+    <div style="background-color: blue; color:white;">
+        This is the Division1...........
+    </div>
+</body>
+</html>
+=======================================================================================
+CSS Selectors:
+	- It is used to select the HTML elemnts, you want to apply the style.
+	- Basic types of HTML selectors
+	1. Elelment or Tag Selectors
+	2. id Selectors
+	3. class Selectors
+	4. Universal Selectors
+	5. Grouping Selectors
+
+1. Elelment or Tag Selectors:
+	Directly apply with the html element or tag.
+	eg.: 
+	tag name{
+	CSS Property Name : Value;
+	
+	}
+2. id Selector:
+	- We can use the id attribute.
+	- Id selector is used with # tag.
+	- Id name can not start with the numbers.
+	
+	eg: #head{
+		}
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #idname{
+            background-image: url("../images/paperImage.jpg");
+            color: blueviolet;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <h1> 
+        Heading 1
+    </h1>
+    <h2> 
+        Heading 2
+    </h2>
+    <div id="idname">
+        This is Division1
+    </div>
+</body>
+</html>
+
+	
